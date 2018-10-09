@@ -13,7 +13,9 @@ export const router: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'login-email', component: EmailComponent },
-    // { path: 'members', component: OtherComponent, canActivate: [AuthGuard] }
+    { path: 'members', component: LoginComponent }
+    // TODO:  ACTIVAR Cuando funcione auth service  
+    // { path: 'members', component: LoginComponent, canActivate: [AuthGuard] }
 
 ]
 
