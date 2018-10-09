@@ -4,7 +4,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -29,7 +29,8 @@ import { routes } from './app.routes';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     BrowserModule,
     routes,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   // providers: [AuthGuard],
   bootstrap: [AppComponent]
