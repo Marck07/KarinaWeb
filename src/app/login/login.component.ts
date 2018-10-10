@@ -52,6 +52,10 @@ export class LoginComponent{
         this.error = err;
       })
   }
+
+  goHome(){
+    this.router.navigate(['/home']);
+  }
   //
   // ngOnInit() {
   // }

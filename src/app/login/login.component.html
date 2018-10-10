@@ -1,16 +1,11 @@
 <div class="form-container">
-  <img src="./assets/images/karinaLogo.jpg" id="lock" style="border: 0; border-radius: 80px;">
+  <img (click)="goHome()" src="./assets/images/karinaLogo.jpg" id="lock" style="cursor: pointer; border: 0; border-radius: 80px;">
 
     <span class="error" *ngIf="error">{{ error }}</span>
 
-  <button (click)="loginFb()" id="fb" style="    background: #3B5998 url(./assets/images/facebook.svg) no-repeat 14px 6px;
-    background-size: 47px;
-    color: #fff;">Login With Facebook</button><br>
-  <button (click)="loginGoogle()" id="google" style="    border: 1px solid #95989A;
-    background: #fff url(./assets/images/google.svg) no-repeat 25px;
-    background-size: 25px;">Login With Google</button>
-  <button routerLink="/login-email" id="email" style="background: #ECECEC url(./assets/images/email.svg) no-repeat 25px;
-    background-size: 25px;">Email</button>
+  <button (click)="loginFb()" class="fb" style="">Login With Facebook</button><br>
+  <button (click)="loginGoogle()" class="google">Login With Google</button>
+  <button routerLink="/login-email" class="email" style="">Email</button>
 
   <a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>
 </div>
